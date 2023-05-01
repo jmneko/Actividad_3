@@ -9,14 +9,14 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
         <h1>agoodshop</h1>
-        <nav>
-            <ul>
+        <nav class="principal_nav">
+            <ul class="list_nav">
                 <li><a href="">Tienda</a></li>
                 <li><a href="">Accesorios</a></li>
                 <li><a href="">Soporte</a></li>
-                <li><a href="mailto://ayuda@agoopshop.com">Contacta</a></li>
+                <li class="contact"><a href="mailto://ayuda@agoopshop.com">Contacta</a></li>
             </ul>
         </nav>
     </header>
@@ -24,10 +24,11 @@
     <main>
         <article>
             <section>
-                <img src="images/iphone 13 pro.jpeg" alt="cinco moviles iphone 13 pro en fila de diferentes colores">
-                    <p>128gb</p>
-                    <h3>OFERTA</h3>
-                    <h2>Compra un Iphone 13 Pro</h2>
+                 <p class="capacity">
+                     128gb
+                </p>
+                <h3>OFERTA</h3>
+                <h2>Compra un Iphone 13 Pro</h2>
                 <p>
                     Iphone 13, tu nuenvo superpoder. Nuestro sistema de camara dual mas avanzado. El chip que hace morder el polvo a la competencia. un subidon de autonomia que vaya si notaras. Ceramic Shield, mas duro que cualquier vidrio de smartphone.
                 </p>
@@ -37,7 +38,7 @@
                 <p>
                     938,99€
                 </p>
-                <button type="button">
+                <button type="button" class="button_1">
                     Comprar
                 </button>
                 <ul>
@@ -78,28 +79,32 @@
             
         </article>
 
-        <aside>
-            <h2>Participa en el sorteo de un ihpone 13</h2>
-            <p>
-                este verano venimos cargados de premios! y podras llevarte un regalo increible como un nuebo iphone 13
-            </p>
-            <p>
-                Rellena este formulario para ser uno de pos afortunados.
-            </p>
-            <form>
-                <label for="Name">Nombre</label>
-                <input type="text" id="Name" name="Name" placeholder="An Gold">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="arigold@mga.com" required>
-                <button type="submit">
-                    Enviar
-                </button>
-            </form>
+        <aside class="lottery">
+            <div class="lottery_1">
+                <h2 class="h2_aside">Participa en el sorteo de un ihpone 13</h2>
+                <p>
+                    este verano ¡venimos cargados de premios! Asi que antes de irte de vacaciones, ¡participa en nuestro sorteo| y podras llevarte un regalo increible como un nuebo iphone 13
+                </p>
+                <p>
+                    Rellena este formulario para ser uno de pos afortunados.
+                </p>
+           </div>
+           <div class="lottery_2">
+                <form class="form">
+                    <label for="Name">Nombre</label>
+                    <input type="text" id="Name" name="Name" placeholder="An Gold">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="arigold@mga.com" required>
+                    <button type="submit" class="submit">
+                        Enviar
+                    </button>
+                </form>
+             </div>
         </aside>
     </main>
 
-    <footer>
-        <p>
+    <footer class="footer">
+        <p class="footer_name">
             ©agoodshop
         </p>
     </footer>
