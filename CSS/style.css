@@ -1,3 +1,7 @@
+body {
+    font-size: 14px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -6,18 +10,35 @@
 
 h1 {
     font-size: 15px;
+    padding-left: 10%;
 }
 
 .list_nav {
     list-style: none;
-    margin: o;
-    padding: o;
     display: flex;
     gap: 30px;
+    margin-right: 6em;
+    font-size: 12px;
 }
 
 .contact {
-    border: 1px solid #707070;
+    border: 2px solid #939292;
+    border-radius: 5px;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.image {
+    width: 650px;
 }
 
 .capacity {
@@ -26,12 +47,46 @@ h1 {
     width: fit-content;
 }
 
+.oferta {
+    font-size: 12px;
+    color: rgb(250, 17, 17);
+    font-weight: 700;
+}
+
+.button_price {
+    display: flex;
+    justify-content: start;
+    column-gap: 3%;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
 .button_1 {
     color: white;
     background-color: dodgerblue;
-    width: fit-content;
-    border: 1px solid #0400f9;
+    width: 76px;
+    height: 30px;
+    border-radius: 5px;
 }
+
+.recommended {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+    height: 320px;
+    align-items: start;
+}
+
+.charger {
+    flex-grow: 3;
+    border: 1px solid #939292;
+}
+
 .lottery {
     background-color: rgb(180, 201, 239);
     display: flex;
@@ -57,7 +112,7 @@ h1 {
     color: white;
     width: fit-content;
     background-color: dodgerblue;
-    border: 1px solid #0400f9;
+    border-radius: 5px;
 }
 
 footer {
