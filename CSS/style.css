@@ -1,57 +1,111 @@
-body {
-    font-size: 14px;
+                                                        /* reseteo de pagina*/
+
+* {
+    box-sizing: border-box;
 }
+
+
+body {
+    position: relative;
+    padding: 5%;
+    margin: 0;
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+                                                              /* header */
 
 .header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #ececec;
+    margin-top: 5%;
 }
+
 
 h1 {
     font-size: 15px;
-    padding-left: 10%;
+    padding-left: 5%;
 }
+
 
 .list_nav {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin-right: 6em;
     font-size: 12px;
 }
 
+
+.header_list {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+}
+
+
+.header_list:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
 .contact {
-    border: 2px solid #939292;
+    border: 1px solid #939292;
     border-radius: 5px;
 }
 
-main {
-    padding-left: 10%;
-    padding-right: 10%;
+.contact:hover {
+    background-color: rgb(11, 183, 77);
 }
+
+                                                              /* main */
+
+main {
+   padding: 5%;
+}
+
+                                                       /* Producto principal */
 
 .phone {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+    margin-bottom: 5%;
 }
+
 
 .image {
+    display: flex;
     width: 650px;
+    position: relative;
 }
 
+
+.phone_image {
+   width: 100%;
+   height: 100%;
+}
+
+
 .capacity {
+    display: inline;
     background-color: green;
     color: white;
     width: fit-content;
+    position: absolute;
+    left: 10px;
 }
 
-.oferta {
+
+.offer {
     font-size: 12px;
     color: rgb(250, 17, 17);
     font-weight: 700;
 }
+
 
 .button_price {
     display: flex;
@@ -60,13 +114,15 @@ main {
     align-items: center;
 }
 
+
 .price {
     font-weight: 700;
     font-size: x-large;
 
 }
 
-.button_1 {
+
+.button {
     color: white;
     background-color: dodgerblue;
     width: 76px;
@@ -74,32 +130,109 @@ main {
     border-radius: 5px;
 }
 
+.button:hover {
+    color: white;
+    background-color: rgb(11, 183, 77);
+    width: 76px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+                                                            /* condiciones de compra */
+
+.condition {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.icon {
+    display: flex;
+    position: relative;
+    left: 4%;
+    width: 2%;
+}
+
+
+                                                            /* accesorios recomendados */
+
 .recommended {
     display: flex;
     justify-content: space-between;
-    column-gap: 60px;
-    height: 320px;
-    align-items: start;
+    column-gap: 30px;
+    align-items: stretch;
+
 }
 
-.charger {
-    flex-grow: 3;
+
+.box {
+    width: 250px;;
     border: 1px solid #939292;
+    border-radius: 3%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
+
+h3 {
+    margin: 0;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.recommended_image {
+    width: 150px;
+    height: 150px;
+    margin-left: 35px;
+}
+
+
+.offer_wireles {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: #ba4646;
+    border: 1px solid #ba4646;
+    border-radius: 10%;
+    width: 57px;
+    height: 19px;
+}
+
+
+.new_airpods {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    background: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 10%;
+    width: 57px;
+    height: 19px;
+}
+
+                                                            /* sorteo */
 
 .lottery {
     background-color: rgb(180, 201, 239);
     display: flex;
     gap: 60px;
+    margin-top: 5%;
 }
+
 
 .lottery_1 {
     margin: 20px;
 }
 
+
 .h2_aside {
     font-size: 30px;
 }
+
 
 .form {
     display: flex;
@@ -108,20 +241,12 @@ main {
     padding: 35px;
 }
 
-.submit {
-    color: white;
-    width: fit-content;
-    background-color: dodgerblue;
-    border-radius: 5px;
-}
+                                                              /* footer */
 
 footer {
     text-align: center;
     font-weight: 700;
     font-size: 13px;
-    padding-top: 20px;
-}
-
-.footer_name {
-    border-top: 1px solid #ececec;
+   margin-bottom: 5%;
+   border-top: 1px solid #ececec;
 }
