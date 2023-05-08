@@ -147,30 +147,13 @@ main {
 }
 
 
-.images_condition {
-    display: contents;
-}
-
-
-.shop {
-    width: 3%;
+.icon {
+    display: flex;
     position: relative;
-    left: 2%;
+    left: 4%;
+    width: 2%;
 }
 
-
-.return {
-    width: 3%;
-    position: relative;
-    left: 2%;  
-}
-
-
-.finance {
-    width: 4%;
-    position: relative;
-    left: 3%;   
-}
 
                                                             /* accesorios recomendados */
 
