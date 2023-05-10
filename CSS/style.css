@@ -203,6 +203,7 @@ h3 ~ p {
 }
 
 
+
 .offer_wireles {
     font-size: 12px;
     color: white;
@@ -213,6 +214,7 @@ h3 ~ p {
     width: 57px;
     height: 19px;
 }
+
 
 
 .new_airpods {
@@ -236,14 +238,17 @@ h3 ~ p {
 }
 
 
+
 .lottery_1 {
     margin: 2%;
 }
 
 
+
 .h2_aside {
     font-size: 30px;
 }
+
 
 
 .form {
@@ -263,7 +268,7 @@ footer {
    border-top: 1px solid #ececec;
 }
 
-
+                                                           /*@media queries*/
 
 @media screen and (max-width: 768px) {
     .body {
