@@ -1,6 +1,5 @@
-                                                        /* reseteo de pagina*/
-
-* {
+                                                        /*RESETEO*/
+*{
     box-sizing: border-box;
 }
 
@@ -9,26 +8,17 @@ body {
     position: relative;
     padding: 5%;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-                                                              /* header */
 
+                                                          /*HEADER*/
 .header {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ececec;
-    margin-top: 5%;
+    align-items: center;
+    border-bottom: 1px solid #555555;
 }
-
-
-
-h1 {
-    font-size: 15px;
-    padding-left: 5%;
-}
-
 
 
 .nav {
@@ -39,11 +29,12 @@ h1 {
 .nav__list {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 18px;
+    font-size: 10px;
 }
 
 .nav__items {
-    display: flex;
+    display: none;
     color: black;
     text-decoration: none;
     padding: 8px;
@@ -54,40 +45,37 @@ h1 {
     text-decoration: underline;
 }
 
+
 .contact {
     border: 1px solid #939292;
     border-radius: 5px;
 }
 
 
-                                                              /* main */
-
-main {
-   padding: 5%;
-}
-
-                                                       /* Producto principal */
-                                                      
-
-
-.section_1 {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-    margin-bottom: 5%;
+h1 {
+    font-size: 17px;
 }
 
 
+                                                    /*MAIN*/
 
-.phone {
+                                            /*PRODUCTO PRINCIPAL*/
+
+ .section_1 {
     display: flex;
-    width: 650px;
+    flex-direction: column;
+    margin-top: 5%;
+ }
+
+
+
+ .phone {
     position: relative;
-}
+ }
 
 .phone__image {
-   width: 386px;
-   height: 391px;
+    width: 100%;
+    height: 100%;
 }
 
 .phone__capacity {
@@ -101,12 +89,22 @@ main {
 
 
 
+.buy {
+    margin: 3% 0 1% 0;
+}
+
+
 .offer {
     font-size: 12px;
     color: rgb(250, 17, 17);
     font-weight: 700;
 }
 
+
+h2 {
+    font-size: xx-large;
+    margin-top: 0;
+}
 
 
 .button_price {
@@ -117,10 +115,9 @@ main {
 }
 
 
-
 .price {
     font-weight: 700;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 
@@ -142,51 +139,59 @@ main {
     border-radius: 5px;
 }
 
-                                                            /* condiciones de compra */
+
+                                                  /*CONDICIONES DE COMPRA*/
+
+
+.icon {
+    left: 4%;
+    width: 60px;
+    height: 50px;
+}
+
 
 .condition {
     display: flex;
     flex-wrap: wrap;
+    gap: 13px;
+    margin-bottom: 2rem;
 }
+
 
 .condition__items {
     display: flex;
     align-items: center;
-
-}
-
-.condition__p {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.icon {
-    left: 4%;
-    width: 35px;
-    height: 25%;
+    gap: 20px;
+    width: 9rem;
+    height: 3rem;
 }
 
 
-                                                            /* accesorios recomendados */
+                                                   /*ACCESORIOS RECOMENDADOS*/
 
 .recommended {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-    align-items: stretch;
-
-}
-
-
-.box {
-    width: 100%;;
-    border: 1px solid #939292;
-    border-radius: 3%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+
+
+.box {
+    border: 1px solid #939292;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 16px;
+}
+
+
+.recommended_image {
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;    
+}
+
 
 h3 {
     margin: 0;
@@ -195,13 +200,6 @@ h3 {
 h3 ~ p {
     margin: 0;
 }
-
-.recommended_image {
-    width: 150px;
-    height: 150px;
-    margin-left: 100px;
-}
-
 
 
 .offer_wireles {
@@ -216,7 +214,6 @@ h3 ~ p {
 }
 
 
-
 .new_airpods {
     font-size: 12px;
     color: white;
@@ -228,13 +225,16 @@ h3 ~ p {
     height: 19px;
 }
 
-                                                            /* sorteo */
+
+
+                                                       /* SORTEO*/
+
 
 .lottery {
+    margin-top: 5%;
     background-color: rgb(180, 201, 239);
     display: flex;
-    gap: 60px;
-    margin-top: 5%;
+    flex-direction: column;
 
     animation-name: neon;
     animation-duration: 1s;
@@ -242,79 +242,83 @@ h3 ~ p {
 }
 
 
-
 .lottery_1 {
-    margin: 2%;
+    padding: 5%;
 }
-
-
-
-.h2_aside {
-    font-size: 30px;
-}
-
 
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 35px;
+    padding: 5%;
 }
 
-                                                              /* footer */
+
+            /*FOOTER*/
+
 
 footer {
     text-align: center;
     font-weight: 700;
     font-size: 13px;
-   margin-bottom: 5%;
-   border-top: 1px solid #ececec;
-}
+    margin: 5% 0 5% 0;
+    border-top: 1px solid #555555;
+}            
+
+
 
                                                            /*@media queries*/
 
-@media screen and (max-width: 768px) {
-    .body {
-        padding: 0;
+@media screen and (min-width: 768px) {
+    body {
+        padding: 5%;
+        font-size: 13px;
     }
-    .main {
-        padding: 0;
+    .header {
+        justify-content: space-between;
     }
-    .nav__list {
-        display: none;
+    .nav__items {
+        display: flex;
     }
     .section_1 {
-        flex-wrap: wrap;
+        flex-direction: row;
     }
     .phone__image {
-        width: 354px;
-        height: 391px;
+        width: 435px;
+        height: 425px;
     }
     .condition {
-    
-    }
-    .condition__items {
-        width: 40%;
-    }
-    .icon {
-        width: 25px;
-    }
-    .section_2 {
-        display: flex;
-        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .recommended {
-        flex-wrap: wrap;
-        gap: 16px;
-    } 
-    .recommended_image {
-        margin-left: 25%;
-    } 
-    .lottery {
-        flex-wrap: wrap;
-        gap: 0;
+        flex-direction: row;
+        gap: 57px;
     }
+    .box {
+        width: 30%;
+    }
+    .recommended_image {
+        display: flex;
+        width: 230px;
+        height: 207px;
+        margin-left: 0;
+    }
+    .lottery {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .lottery_1 {
+        padding: 3%;
+    }
+    .lottery_2 {
+        margin-right: 6%;
+    }
+    .form {
+        width: 240px;
+    }
+
 }
 
 
