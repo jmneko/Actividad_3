@@ -61,7 +61,7 @@ h1 {
 
                                             /*PRODUCTO PRINCIPAL*/
 
- .section_1 {
+ .article_1 {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
@@ -281,7 +281,7 @@ footer {
     .nav__items {
         display: flex;
     }
-    .section_1 {
+    .article_1 {
         flex-direction: row;
     }
     .phone__image {
